@@ -31,16 +31,27 @@ public class Stocking
     {
         return idNum;
     }
+    public static int getStockingCount()
+    {
+        return stockingCount; 
+    }
 }
-class TestStocking()
+class TestStocking
 {
+
     public static void main(String[] args)
     {
         Stocking s1 = new Stocking();
         Stocking s2 = new Stocking("Silas", 4);
         Stocking s3 = new Stocking("Micah", 2);
+        Stocking s4 = new Stocking("Billy", 5);
+        Stocking s5 = new Stocking("Karen", 0);
+        
 
-        s2.getitemCount();
+
+        System.out.println(s2.getitemCount());
+        System.out.println(Stocking.getStockingCount()); //How many stockings are in the class
+        System.out.println(Stocking.getStockingCount());
     }
 
 }
